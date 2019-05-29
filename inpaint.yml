@@ -1,5 +1,5 @@
 # parameters
-DATASET: 'celebahq'  # 'tmnist', 'dtd', 'places2', 'celeba', 'imagenet', 'cityscapes'
+DATASET: 'celebahq'  # 'tmnist', 'dtd', 'places2', 'celeba', 'imagenet', 'cityscapes','seismic'
 RANDOM_CROP: False
 VAL: False
 LOG_DIR: full_model_celeba_hq_256
@@ -50,7 +50,10 @@ DATA_FLIST:
     'data/imagenet/train_shuffled.flist',
     'data/imagenet/validation_static_view.flist',
   ]
-
+  seismic: [
+    'dataset/imagenet/train_shuffled.flist',
+    'dataset/imagenet/validation_static_view.flist',
+  ]
 STATIC_VIEW_SIZE: 30
 IMG_SHAPES: [256, 256, 3]
 HEIGHT: 128

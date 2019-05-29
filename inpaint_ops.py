@@ -116,6 +116,29 @@ def random_bbox(config):
     w = tf.constant(config.WIDTH)
     return (t, l, h, w)
 
+def frame_bbox(config):
+    """Generate a frame-like bbox tlhw with configuration.                                                              # Rebecca
+
+    Args:
+        config: Config should have configuration including IMG_SHAPES,
+            VERTICAL_MARGIN, HEIGHT, HORIZONTAL_MARGIN, WIDTH.
+
+    Returns:
+        tuple: (top, left, height, width)
+
+    """
+    img_shape = config.IMG_SHAPES
+    img_height = img_shape[0]
+    img_width = img_shape[1]
+    maxt = img_height - config.VERTICAL_MARGIN - config.HEIGHT
+    maxl = img_width - config.HORIZONTAL_MARGIN - config.WIDTH
+    t = tf.random_uniform(
+        [], minval=config.VERTICAL_MARGIN, maxval=maxt, dtype=tf.int32)
+    l = tf.random_uniform(
+        [], minval=config.HORIZONTAL_MARGIN, maxval=maxl, dtype=tf.int32)
+    h = tf.constant(config.HEIGHT)
+    w = tf.constant(config.WIDTH)
+    return (t, l, h, w)
 
 def bbox2mask(bbox, config, name='mask'):
     """Generate mask tensor from bbox.
