@@ -145,7 +145,9 @@ class InpaintCAModel(Model):
                                 summary=False, reuse=False):
         batch_pos = batch_data / 127.5 - 1.
         # generate mask, 1 represents masked point
+        # bbox = random_bbox(config)
         bbox = random_bbox(config)
+
         mask = bbox2mask(bbox, config, name='mask_c')
         batch_incomplete = batch_pos*(1.-mask)
         x1, x2, offset_flow = self.build_inpaint_net(

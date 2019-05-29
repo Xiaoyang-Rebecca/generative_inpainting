@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abc9e99f-7442-412b-a729-a23e9b6e609e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DataPrepare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataPrepare.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataPrepare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_flist/train_shuffled.flist" beforeDir="false" afterPath="$PROJECT_DIR$/data_flist/train_shuffled.flist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_flist/validation_shuffled.flist" beforeDir="false" afterPath="$PROJECT_DIR$/data_flist/validation_shuffled.flist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inpaint.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inpaint.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inpaint_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/inpaint_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inpaint_ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/inpaint_ops.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test_imagenet.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/test_imagenet.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +19,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataPrepare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="110" column="53" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
+            <state relative-caret-position="406">
+              <caret line="85" column="56" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="56" />
               <folding>
                 <element signature="e#351#366#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inpaint_ops.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inpaint_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1170">
+              <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/test_imagenet.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inpaint.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -42,6 +98,8 @@
       <find>mask</find>
       <find>is_shuffled</find>
       <find>train_filename</find>
+      <find>random</find>
+      <find>yml</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\ujz689\RebeccaLI\Proj\generative_inpainting\dataset</dir>
@@ -54,17 +112,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/train.py" />
-        <option value="$PROJECT_DIR$/inpaint_ops.py" />
         <option value="$PROJECT_DIR$/shuffle_train.py" />
-        <option value="$PROJECT_DIR$/inpaint.yml" />
         <option value="$PROJECT_DIR$/flistGenerate.py" />
+        <option value="$PROJECT_DIR$/scripts/test_imagenet.sh" />
         <option value="$PROJECT_DIR$/DataPrepare.py" />
+        <option value="$PROJECT_DIR$/inpaint_model.py" />
+        <option value="$PROJECT_DIR$/inpaint.yml" />
+        <option value="$PROJECT_DIR$/inpaint_ops.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1801" />
-    <option name="y" value="270" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1808" />
+    <option name="y" value="332" />
     <option name="width" value="1400" />
     <option name="height" value="970" />
   </component>
@@ -80,6 +140,11 @@
             <path>
               <item name="generative_inpainting" type="b2602c69:ProjectViewProjectNode" />
               <item name="generative_inpainting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="generative_inpainting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="generative_inpainting" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="generative_inpainting" type="b2602c69:ProjectViewProjectNode" />
@@ -181,7 +246,7 @@
     <frame x="1672" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15279241" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15279241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -194,7 +259,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49947312" weight="0.29050815" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49736565" weight="0.40939596" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3614331" side_tool="true" visible="true" weight="0.2885906" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="10" sideWeight="0.6385669" visible="true" weight="0.2885906" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.6385669" visible="true" weight="0.2885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -222,6 +287,9 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -339,17 +407,45 @@ plt.imshow(mask_demo)</expression-string>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generate_flist.py" />
+    <entry file="file://$PROJECT_DIR$/data_flist/validation_shuffled.flist">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flistGenerate.py" />
+    <entry file="file://$PROJECT_DIR$/data_flist/train_shuffled.flist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPrepare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="85" column="56" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="56" />
+          <folding>
+            <element signature="e#351#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/test_imagenet.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inpaint_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+        <state relative-caret-position="1170">
+          <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+        <state relative-caret-position="1">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -358,38 +454,17 @@ plt.imshow(mask_demo)</expression-string>
     </entry>
     <entry file="file://$PROJECT_DIR$/inpaint.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
+        <state relative-caret-position="493">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inpaint_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="121" column="9" lean-forward="true" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+        <state relative-caret-position="260">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_flist/validation_shuffled.flist">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_flist/train_shuffled.flist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flistGenerate.py" />
-    <entry file="file://$PROJECT_DIR$/DataPrepare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="110" column="53" selection-start-line="110" selection-start-column="53" selection-end-line="110" selection-end-column="53" />
-          <folding>
-            <element signature="e#351#366#0" expanded="true" />
           </folding>
         </state>
       </provider>

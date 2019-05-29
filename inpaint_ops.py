@@ -130,14 +130,12 @@ def frame_bbox(config):
     img_shape = config.IMG_SHAPES
     img_height = img_shape[0]
     img_width = img_shape[1]
-    maxt = img_height - config.VERTICAL_MARGIN - config.HEIGHT
-    maxl = img_width - config.HORIZONTAL_MARGIN - config.WIDTH
-    t = tf.random_uniform(
-        [], minval=config.VERTICAL_MARGIN, maxval=maxt, dtype=tf.int32)
-    l = tf.random_uniform(
-        [], minval=config.HORIZONTAL_MARGIN, maxval=maxl, dtype=tf.int32)
+    # maxt = img_height - config.VERTICAL_MARGIN - config.FRAME_HEIGHT
+    # maxl = img_width - config.HORIZONTAL_MARGIN - config.FRAME_WIDTH
+    t = tf.constant(0)
+    l = tf.range(0, img_width, config.SAMPLE_WIDTH, dtype=tf.int32)       # step (SAMPLE_WIDTH)= 4
     h = tf.constant(config.HEIGHT)
-    w = tf.constant(config.WIDTH)
+    w = tf.constant(sample_rate - 1 )   # frame_size = 1
     return (t, l, h, w)
 
 def bbox2mask(bbox, config, name='mask'):

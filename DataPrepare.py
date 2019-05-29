@@ -107,8 +107,8 @@ if __name__ == "__main__":
             training_dir_subset = os.path.join(training_dir,subset)   # write/temp/xline
             if not os.path.exists(training_dir_subset):
                 os.makedirs(training_dir_subset)
-            # for raw_fName in os.listdir(data_dir):
-            for raw_fName in os.listdir(data_dir)[0:2]:    # when no need to crop image
+            for raw_fName in os.listdir(data_dir):
+            # for raw_fName in os.listdir(data_dir)[0:2]:    # debug
                 img = io.imread(os.path.join(data_dir, raw_fName))
                 for i in range(0, img.shape[0] - crop_size[0], interval):
                     for j in range(0, img.shape[1] - crop_size[1], interval):
